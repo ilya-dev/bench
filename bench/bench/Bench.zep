@@ -7,21 +7,21 @@ class Bench {
      *
      * @var float 
      */
-    protected startTime;
+    protected startTime = 0.0;
 
     /**
      * The end time 
      *
      * @var float
      */
-    protected endTime;
+    protected endTime = 0.0;
 
     /**
      * The memory usage
      * 
      * @var integer
      */
-    protected memoryUsage;
+    protected memoryUsage = 0;
 
     /**
      * Start a benchmark
@@ -31,6 +31,10 @@ class Bench {
     public function start() -> void
     {
         let this->startTime = \microtime(true);
+
+        let this->memoryUsage = 0;
+
+        let this->endTime = 0.0;
     }
 
     /**
