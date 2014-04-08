@@ -1,0 +1,17 @@
+{
+    "name": "ilya/bench",
+    "description": "Micro library for benchmarks implemented as a PHP extension written in Zephir",
+    "require-dev": {
+        "phpspec/phpspec": "~2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ilya S.",
+            "email": "public.ilya.s@gmail.com"
+        }
+    ],
+    "require": {
+        "phalcon/zephir": "1.0.*@dev"
+    }
+}
